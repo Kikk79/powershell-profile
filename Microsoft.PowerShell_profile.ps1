@@ -611,7 +611,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock $scriptblock
 if (Get-Command -Name "Get-Theme_Override" -ErrorAction SilentlyContinue){
     Get-Theme_Override;
 } else {
-    oh-my-posh init pwsh --config $POSH_THEMES_PATH + "/night-owl.omp.json" | Invoke-Expression
+#    oh-my-posh init pwsh --config $POSH_THEMES_PATH + "/night-owl.omp.json" | Invoke-Expression
 }
 
 if (Get-Command zoxide -ErrorAction SilentlyContinue) {
